@@ -7,8 +7,18 @@
 	</head>
 	<body>
 			<form action="customerBackend.php" method="post">
-        <label>Username:</label><input type="text" name="username"><br>
-	 			<label>Password:</label><input type="text" name="password"><br>
+        <label>Username:</label><input type="text" name="username">
+        <br>
+	 			<label>Password:</label><input type="text" name="password">
+        <br>
+
+        <h2>Shipping</h2>
+				<label><input type="radio" name ="shipping" value = "7_day" >Free 7 Day</label>
+        <br>
+				<label><input type="radio" name ="shipping" value = "3_day" >$5.00 3 Day</label>
+        <br>
+				<label><input type="radio" name ="shipping" value = "overnight" >$50.00 Over Night</label>
+        <br>
 			</form>
 		</div>
 	</body>
