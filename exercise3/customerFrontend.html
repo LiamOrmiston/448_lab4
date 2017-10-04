@@ -6,7 +6,7 @@
 		<link type="text/css" rel="stylesheet" href="style.css">
 	</head>
 	<body>
-			<form action="customerBackend.php" method="post">
+			<form action="customerBackend.php" method="post" onsubmit="return check(this);">
         <label>Username:</label><input type="text" name="username">
         <br>
 	 			<label>Password:</label><input type="text" name="password">
