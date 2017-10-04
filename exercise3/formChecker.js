@@ -11,6 +11,10 @@ function check(form) {
   var m_feedback = "";
   var warning = document.getElementById('warning');
 
+  function reset() {
+  	location.reload
+  }
+
   if (m_username.length == 0) {
   m_error = true;
   m_feedback += "<p>Username cannot be blank</p>"
