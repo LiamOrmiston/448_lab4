@@ -1,0 +1,14 @@
+button {
+  background-color: #00CCFF;
+  font-family: arial;
+  font-size: 36px;
+  margin: 15px;
+}
+body {
+  background-color: #FF4444;
+  text-align: center;
+}
+h1 {
+  font-family: arial;
+  font-size: 48px;
+}
