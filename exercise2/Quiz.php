@@ -11,7 +11,8 @@ $y3 = "9";
 $y4 = "6";
 $y5 = "3.14159";
 
-$score = ($x1 == $y1 ? 20 : 0) + ($x2 == $y2 ? 20 : 0) + ($x3 == $y3 ? 20 : 0) + ($x4 == $y4 ? 20 : 0) + ($x5 == $y5 ? 20 : 0);
+$score = ($x1 == $y1 ? 1 : 0) + ($x2 == $y2 ? 1 : 0) + ($x3 == $y3 ? 1 : 0) + ($x4 == $y4 ? 1 : 0) + ($x5 == $y5 ? 1 : 0);
+$percent = $score*20;
 
 echo '<div>';
 echo "<p>1: What is 2+2?<br>You answered: " . $x1 . "<br>Correct answer: $y1</p>";
@@ -19,5 +20,7 @@ echo "<p>2: What is 2*3?<br>You answered: " . $x2 . "<br>Correct answer: $y2</p>
 echo "<p>3: What is 27/3?<br>You answered: " . $x3 . "<br>Correct answer: $y3</p>";
 echo "<p>4: What is 11-5?<br>You answered: " . $x4 . "<br>Correct answer: $y4</p>";
 echo "<p>5: What is pi to 5 decimal places?<br>You answered: " . $x5 . "<br>Correct answer: $y5</p>";
+
+echo "<p>You scored: " . $score . "/5 for a total of " . $percent . "%.</p>";
 echo '</div>';
  ?>
