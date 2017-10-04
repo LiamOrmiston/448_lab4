@@ -9,6 +9,7 @@ function check(form) {
 
   var m_error = false;
   var m_feedback = "";
+  var warning = document.getElementById('warning');
 
   if (m_username.length == 0) {
   m_error = true;
@@ -39,6 +40,13 @@ function check(form) {
   m_error = true;
   m_feedback += "<p>Keyboard quantity cannot be negative</p>"
   }
+
+  warning.innerHTML = "";
+  if(m_error){
+    warning.innerHTML += "<div class=\"warning\">" + m_feedback + "</div>"
+  }
+
+  return (!m_error);
 }
 
 // https://stackoverflow.com/questions/46155/how-to-validate-email-address-in-javascript
