@@ -1,0 +1,7 @@
+table.receipt th {
+	background-color: lightblue;
+}
+
+td#total {
+	background-color: green;
+}
